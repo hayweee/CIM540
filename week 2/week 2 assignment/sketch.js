@@ -1,14 +1,20 @@
 function setup() {
-    createCanvas(600,400);
-    background(255,0,0);
-    background(125);
+    createCanvas(500,500);
+  
     
     console.log("width: " + width + " " + "height: " + height);
 }
 
 function draw() {
-  // x, y, width, height
-ellipse(70,70,100,100);
+background(64,224,208);
+rect(70,70,100,150);
     
-ellipse(250,250,50,50);
+ellipse(100,100,25,25);
+ellipse(140,100,25,25);
+
+ellipse(120,125,15,25);
+
+rect(95,150,50,5);
+rect(107,155,10,10);
+rect(123,155,10,10);
 }

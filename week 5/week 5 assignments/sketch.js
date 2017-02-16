@@ -1,35 +1,38 @@
-var message = "hello";
+var i = 0;
 
-function setup(){   
+function setup(){
+    createCanvas(200,200);
+    frameRate(60);
+    background(0);
 }
 
 function draw(){
-    bacground(255);
-    //fill(0);
-    textSize(32);
+
     
-    text(message, 10, 10, 100, 100); 
-}
-
-function mousePressed(){
-    message = "goodbye";
-}
-
-function mouseReleased(){
-    message = "";
-}
-
-
-function keyPressed(){
-    console.log(key);
-    console.log(keyCode);
+  
+    //  i = i + 1;
+    //
+    //  if(i > width){
+    //    i=0; 
+    //}
     
-        if(key == 'A'){
-            console.log("A is for Apple")
-        }
-        
-        if(keyCode == 65){
-            console.log("A is for 65")
-        }
+    
+//    while(i < width){
+//        i++;
+//        console.log(i);
+//    }
+    
+//    for(var i = 0; i < width; i++){
+//        console.log(i);
+//        fill(random(255));
+//        ellipse(i, height/2, 10, 10);
+//    }
+//    
+    while(i < width){
+        i++;
+            console.log(i);
+            fill(random(255),random(255),random(255));
+            ellipse(random(width), random(height), 10, 10);
+    }
     
 }

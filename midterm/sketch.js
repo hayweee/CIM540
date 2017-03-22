@@ -21,7 +21,7 @@ function draw() {
       var dx = mouseX-x;
       var dy = mouseY-y;
       noStroke();
-      fill(0);
+      fill(255,0,125);
       var r = atan2(dy, dx);
       var arcSize =  map(sin(theta/4+offSet), -1, 1, radians(30), PI);
       sz = cellSize*.90;

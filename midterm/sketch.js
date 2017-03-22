@@ -9,7 +9,7 @@ function setup() {
 
 function draw() {
   background(255);
-  fill(255,0,125);
+  fill(0);
   noStroke();
   textAlign(RIGHT);
   text("Move your mouse!", width - 10, 30);
@@ -32,7 +32,7 @@ function draw() {
       pop();
     }
   }
-  theta += 0.02;
+  theta += 0.05;
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight-4);

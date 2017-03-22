@@ -2,22 +2,30 @@ var randomHello = [];
 
 
 function setup() {
+    
+    createCanvas(500,500);
+    
     console.log(randomHello.lenght);
     console.log(typeof(randomHello));
     
     randomHello.push("Hello");
-    console.log(randomHello);
-    console.log(randomHello[0]);
-    
     randomHello.push("Hola");
-    console.log(randomHello);
-    console.log(randomHello[1]);
-    
     randomHello.push("Bonjour");
-    console.log(randomHello);
-    console.log(randomHello[2]);
-}
-
-function draw(){
+    randomHello.push("what's");
+    randomHello.push("up");
+ 
+//    text(randomHello[0], random(width), random(height));
+//    text(randomHello[1], random(width), random(height));
+//    text(randomHello[2], random(width), random(height));
+//    text(randomHello[3], random(width), random(height));
+//    text(randomHello[4], random(width), random(height));
     
+    for(var i = 0; i < randomHello.length; i++);{
+        text(randomHello[i], random(width), random(height));
+        
+    }
+}
+    
+function draw(){
+
 }

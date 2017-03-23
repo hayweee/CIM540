@@ -8,8 +8,8 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  fill(0);
+  background(0);
+  fill(255,0,0);
   noStroke();
   textAlign(RIGHT);
   text("Move your mouse!", width - 10, 30);
@@ -21,9 +21,9 @@ function draw() {
       var dx = mouseX-x;
       var dy = mouseY-y;
       noStroke();
-      fill(255,0,125);
+      fill(255,233,10);
       var r = atan2(dy, dx);
-      var arcSize =  map(sin(theta/4+offSet), -1, 1, radians(30), PI);
+      var arcSize =  map(sin(theta/4+offSet), -1, 1, radians(330), PI);
       sz = cellSize*.90;
       push();
       translate(x+edge, y+edge);
@@ -32,7 +32,7 @@ function draw() {
       pop();
     }
   }
-  theta += 0.05;
+  theta += 0.04;
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight-4);

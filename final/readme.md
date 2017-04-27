@@ -1,2 +1,2 @@
 #final
-#I want to create a character that uses facial recognition and does whatever you do. For example, when the user smiles, the character will smile. It will be like Simon says. 
+#I want to create a character that "sings" the song the browser is playing due to amplitude recognition. 

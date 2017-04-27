@@ -1,38 +1,31 @@
-var i = 0;
+var randomHello = [];
 
-function setup(){
-    createCanvas(200,200);
-    frameRate(60);
-    background(0);
+
+function setup() {
+    
+    createCanvas(500,500);
+    
+    console.log(randomHello.lenght);
+    console.log(typeof(randomHello));
+    
+    randomHello.push("Hello");
+    randomHello.push("Hola");
+    randomHello.push("Bonjour");
+    randomHello.push("what's");
+    randomHello.push("up");
+ 
+text(randomHello[0], random(width), random(height));
+text(randomHello[1], random(width), random(height));
+text(randomHello[2], random(width), random(height));
+text(randomHello[3], random(width), random(height));
+text(randomHello[4], random(width), random(height));
+    
+    for(var i = 0; i < randomHello.length; i++);{
+        text(randomHello[i], random(width), random(height));
+        
+    }
 }
-
+    
 function draw(){
 
-    
-  
-    //  i = i + 1;
-    //
-    //  if(i > width){
-    //    i=0; 
-    //}
-    
-    
-//    while(i < width){
-//        i++;
-//        console.log(i);
-//    }
-    
-//    for(var i = 0; i < width; i++){
-//        console.log(i);
-//        fill(random(255));
-//        ellipse(i, height/2, 10, 10);
-//    }
-//    
-    while(i < width){
-        i++;
-            console.log(i);
-            fill(random(255),random(255),random(255));
-            ellipse(random(width), random(height), 10, 10);
-    }
-    
 }
